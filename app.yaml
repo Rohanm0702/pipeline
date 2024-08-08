@@ -8,7 +8,7 @@ spec:
     - name: kubevela-demo-app-web
       type: webservice
       properties:
-        image: somefive/kubevela-demo-cicd-app
+        image: rohanm0702/pipeline:latest
         imagePullPolicy: Always
         port: 8080
       traits:
