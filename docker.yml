@@ -1,0 +1,12 @@
+apiVersion: core.oam.dev/v1beta1
+kind: Application
+metadata:
+  name: kubevela-dockerhub
+spec:
+  components:
+    - name: kubevela-dockerhub
+      type: webservice
+      properties:
+        image: rohanm0702/pipeline:latest
+        imagePullPolicy: Always
+        port: 8081

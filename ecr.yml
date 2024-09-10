@@ -1,0 +1,13 @@
+apiVersion: core.oam.dev/v1beta1
+kind: Application
+metadata:
+  name: kubevela-demo-ecr
+spec:
+  components:
+    - name: kubevela-demo-ecr
+      type: webservice
+      properties:
+        image: rohanm0702/pipeline:latest
+        imagePullPolicy: Always
+        port: 8080
+      
